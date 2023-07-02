@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+.left-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+.logo{
+    font-size: 30px;
+}
+.nav{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    padding: 12px;
+}
+.nav-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+}
+.left-section a::after{
+    content: '';
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    border-radius: 6px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+.left-section a:hover::after{
+    transform: scaleX(1);
+  
+  
+  }
+  .header .btnLogin-popup {
+    width:100px ;
+    height:50px ;
+    border: 2px solid #fff;
+    color:#fff;
+    background: transparent;
+    border-radius: 6px;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 0.5s;
+  }
+  .header .btnLogin-popup:hover  {
+    background:#fff;
+    color: #162938;
+  
+  }
+.background{
+    padding: 0;
+}
+.content{
+    height: 700px;
+    background-color: rgba(29, 29, 29, 0.9);
+    margin-top: 0;
+    padding-left: 96px;
+    padding-right: 96px;
+}
+.content * {
+    color: white;
+}
+.content h2 {
+    text-align: center;
+}
+.content p {
+    text-align: center;
+}
+.travel{
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer i{
+    height: 45px;
+    width: 45px;
+    color: black;
+}
+.source{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
